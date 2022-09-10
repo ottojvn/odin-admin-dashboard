@@ -5,31 +5,89 @@
   gap: 10px;
 }
 
+html {
+  font-family: sans-serif;
+}
+
+body {
+  width: clamp(min(100vw, 320px), 80%, 2560px);
+  margin: 0 auto;
+  border-style: solid;
+}
+
 header {
-  background-color: black;
   grid-row-start: 1;
   grid-column: 2 / 4;
 }
 
 #projects {
-  background-color: gold;
+  grid-row-start: 2;
+  grid-row-end: 4;
 }
 
 #announcements {
-  background-color: red;
   grid-row-start: 2;
   grid-column-start: 3;
 }
 
 #trending {
-  background-color: green;
   grid-row-start: 3;
   grid-column-start: 3;
 }
 
 nav {
-  background-color: blue;
   grid-row-start: 1;
   grid-row-end: span end;
   grid-column-start: 1;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon {
+  transform: scale(0.6);
+}
+.icon:hover {
+  background-color: lightgray;
+  border-radius: 100%;
+  transform: scale(0.8);
+}
+#profile-name {
+  display: inline;
+  font-weight: bold;
+}
+#profile-name:hover {
+  cursor: grab;
+  background-color: lightgray;
+}
+
+#username {
+  display: inline;
+}
+
+header {
+  padding: 0 1rem;
+}
+
+.sub-text {
+  font-size: 0.8rem;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+.control-panel-button {
+  border-radius: 10px;
+  border-style: none;
+  width: 5rem;
+  margin: 0.1rem;
+  padding: 0.5rem 0;
+  font-weight: bold;
+}
+.control-panel-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 0.4rem black;
 }

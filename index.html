@@ -4,21 +4,54 @@
     <meta charset="UTF-8" />
     <title>Admin Dashboard</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <div class="grid-container">
-      <header>HEADER</header>
+      <header>
+        <div id="header-top" class="flex-container">
+          <div id="search-bar">
+            <form>
+              <img src="./icons/magnify.png" class="icon" />
+              <input id="search-input" type="text" />
+            </form>
+          </div>
 
-      <nav>NAV</nav>
+          <div id="profile-icons">
+            <img src="./icons/bell.png" id="notif-icon" class="icon" />
+            <img src="./icons/account-circle.png" class="icon" />
+            <div id="profile-name"><p id="username">USERNAME</p></div>
+          </div>
+        </div>
+
+        <div id="header-bottom" class="flex-container">
+          <div id="welcome-msg" class="flex-container">
+            <div id="profile-pic">
+              <img src="./icons/account-circle.png" />
+            </div>
+            <div id="greeting">
+              <p class="sub-text">Hello there,</p>
+              <p>USERNAME (@user)</p>
+            </div>
+          </div>
+
+          <div id="control-panel">
+            <button class="control-panel-button">New</button>
+            <button class="control-panel-button">Upload</button>
+            <button class="control-panel-button">Share</button>
+          </div>
+        </div>
+      </header>
+
+      <nav></nav>
 
       <main>
-        <section id="projects">PROJECTS</section>
+        <section id="projects"></section>
       </main>
 
       <section>
-        <article id="announcements">ANNOUNCEMENTS</article>
-        <article id="trending">TRENDING</article>
+        <article id="announcements"></article>
+        <article id="trending"></article>
       </section>
     </div>
   </body>
