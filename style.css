@@ -44,14 +44,20 @@ nav {
 .flex-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   align-items: center;
+}
+.flex-space-between {
+  justify-content: space-between;
+}
+
+.flex-column {
+  flex-direction: column;
 }
 
 .icon {
   transform: scale(0.6);
 }
-.icon:hover {
+.icon-hover:hover {
   background-color: lightgray;
   border-radius: 100%;
   transform: scale(0.8);
@@ -91,3 +97,24 @@ header {
   transform: scale(1.05);
   box-shadow: 0 0 0.4rem black;
 }
+
+#dashboard-icon {
+  transform: scale(0.8);
+}
+
+.inline {
+  display: inline;
+}
+
+#dashboard-panel {
+  margin: 2rem 0;
+}
+
+.panel-line {
+  width: 100%;
+}
+
+.panel-line:hover {
+  background-color: gray;
+}
+

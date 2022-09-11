@@ -9,23 +9,27 @@
   <body>
     <div class="grid-container">
       <header>
-        <div id="header-top" class="flex-container">
+        <div id="header-top" class="flex-container flex-space-between">
           <div id="search-bar">
             <form>
-              <img src="./icons/magnify.png" class="icon" />
+              <img src="./icons/magnify.png" class="icon icon-hover" />
               <input id="search-input" type="text" />
             </form>
           </div>
 
           <div id="profile-icons">
-            <img src="./icons/bell.png" id="notif-icon" class="icon" />
-            <img src="./icons/account-circle.png" class="icon" />
+            <img
+              src="./icons/bell.png"
+              id="notif-icon"
+              class="icon icon-hover"
+            />
+            <img src="./icons/account-circle.png" class="icon icon-hover" />
             <div id="profile-name"><p id="username">USERNAME</p></div>
           </div>
         </div>
 
-        <div id="header-bottom" class="flex-container">
-          <div id="welcome-msg" class="flex-container">
+        <div id="header-bottom" class="flex-container flex-space-between">
+          <div id="welcome-msg" class="flex-container flex-space-between">
             <div id="profile-pic">
               <img src="./icons/account-circle.png" />
             </div>
@@ -43,7 +47,58 @@
         </div>
       </header>
 
-      <nav></nav>
+      <nav>
+        <div>
+          <img
+            src="./icons/view-dashboard.png"
+            class="icon"
+            id="dashboard-icon"
+          />
+          <h2 class="inline">Dashboard</h2>
+        </div>
+
+        <div
+          class="flex-container flex-column flex-space-between"
+          id="dashboard-panel"
+        >
+          <div class="flex-container panel-line">
+            <img class="icon" src="./icons/home.png" alt="" />
+            <p>Home</p>
+          </div>
+          <div class="flex-container panel-line">
+            <img class="icon" src="./icons/card-account-details.png" alt="" />
+            <p>Profile</p>
+          </div>
+          <div class="flex-container panel-line">
+            <img class="icon" src="./icons/message.png" alt="" />
+            <p>Messages</p>
+          </div>
+          <div class="flex-container panel-line">
+            <img class="icon" src="./icons/history.png" alt="" />
+            <p>History</p>
+          </div>
+          <div class="flex-container panel-line">
+            <img class="icon" src="./icons/file-tree.png" alt="" />
+            <p>Tasks</p>
+          </div>
+          <div class="flex-container panel-line">
+            <img class="icon" src="./icons/account-group.png" alt="" />
+            <p>Communities</p>
+          </div>
+          <div class="flex-container panel-line">
+            <img class="icon" src="./icons/cog.png" alt="" />
+            <p>Settings</p>
+          </div>
+          <div class="flex-container panel-line">
+            <img class="icon" src="./icons/help-circle.png" alt="" />
+            <p>Support</p>
+          </div>
+          <div class="flex-container panel-line">
+            <img class="icon" src="./icons/shield-check.png" alt="" />
+            <p>Privacy</p>
+          </div>
+        </div>
+      </nav>
 
       <main>
         <section id="projects"></section>
