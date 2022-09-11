@@ -118,3 +118,14 @@ header {
   background-color: gray;
 }
 
+#announcements > h2 {
+  font-size: 0.9rem;
+}
+
+.announcement-title {
+  font-size: 0.725rem;
+}
+
+.announcement-text {
+  font-size: 0.625rem;
+}
