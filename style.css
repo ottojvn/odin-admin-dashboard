@@ -118,14 +118,27 @@ header {
   background-color: gray;
 }
 
-#announcements > h2 {
+#side-panel > h2 {
   font-size: 0.9rem;
 }
 
-.announcement-title {
+#side-panel > article > div > h3 {
   font-size: 0.725rem;
 }
 
-.announcement-text {
+#side-panel > article > div > p {
   font-size: 0.625rem;
+}
+
+.trending-card > img {
+  transform: scale(0.6);
+}
+.trending-card > div > p {
+  margin: 0;
+}
+.trending-card > div > p:first-of-type {
+  font-size: 1rem;
+}
+.trending-card > div > p:last-of-type {
+  font-size: 0.8rem;
 }
